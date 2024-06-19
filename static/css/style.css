@@ -1,0 +1,151 @@
+/* styles.css */
+
+
+/* chat_message_p.html */
+@keyframes fadeInAndUp {
+    from   {opacity: 0; transform: translateY(12px);}
+    to { opacity: 1; transform: translateY(0px);}
+}
+.fade-in-up {
+    animation: fadeInAndUp 0.6s ease;
+}
+
+/* chatroom_delete.html */
+
+.delete-button {
+    background-color: #f56565; /* red-500 */
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c53030; /* red-700 */
+}
+
+.cancel-button {
+    background-color: #edf2f7; /* gray-300 */
+    color: black;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #c3c9d0; /* gray-400 */
+}
+
+
+/* chatroom_edit.html */
+
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 30%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.update_button {
+    margin-top: 8px;
+    background-color: #4a5568; /* gray-700 */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.update_button:hover {
+    background-color: #2d3748; /* gray-800 */
+}
+
+.button_style {
+    background-color: #edf2f7; /* gray-300 */
+    color: black;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button_style:hover {
+    background-color: #c3c9d0; /* gray-400 */
+}
+
+
+.button_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.button_container button {
+    margin-right: 50px !important; /* Adjust this value to increase or decrease the space between the buttons */
+}
+
+
+.chatroom_members {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+}
+
+.member_info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+}
+
+.checkbox_container {
+    display: inline-block;
+    padding-right: 16px;
+}
+
+.remove_member_checkbox {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 8px;
+    border: 1px solid #cbd5e0; /* gray-400 */
+}
+
+.remove_member_checkbox::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://img.icons8.com/ffffff/32/multiply.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.remove_member_checkbox:checked {
+    background-color: #e53e3e; /* red-600 */
+}
+
+.remove_member_checkbox:hover {
+    border-color: #a0aec0; /* gray-500 */
+}
+
+.remove_member_checkbox:focus {
+    outline: none;
+}
+
+

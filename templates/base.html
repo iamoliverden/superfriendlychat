@@ -1,3 +1,5 @@
+<!-- base.html -->
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +15,8 @@
     <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
-        [x-cloak] { 
-            display: none !important; 
+        [x-cloak] {
+            display: none !important;
         }
         h1 {
             @apply text-4xl font-bold mb-4
@@ -26,7 +28,7 @@
             @apply mb-4
         }
         .button, button, [type='submit'], [type='button'] {
-            @apply bg-indigo-600 text-white font-bold px-6 py-4 inline-block 
+            @apply bg-indigo-600 text-white font-bold px-6 py-4 inline-block
             rounded-lg shadow-lg transition-all cursor-pointer
         }
         .button:hover, button:hover, [type='submit']:hover, [type='button']:hover {

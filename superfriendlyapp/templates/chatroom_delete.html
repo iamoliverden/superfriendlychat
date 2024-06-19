@@ -1,3 +1,5 @@
+<!-- chatroom_delete.html -->
+
 {% extends 'layouts/box.html' %}
 
 {% block content %}
@@ -8,8 +10,8 @@
 
 <form method='POST'>
     {% csrf_token %}
-    <button type="submit" class="button-red mt-4">Yes, delete</button>
-    <a class="button button-gray ml-1" href="{{ request.META.HTTP_REFERER }}">Cancel</a>
+    <button type="submit" class="delete-button">Yes, delete</button>
+    <button class="cancel-button" href="{{ request.META.HTTP_REFERER }}">Cancel</button>
 </form>
 
 {% endblock %}

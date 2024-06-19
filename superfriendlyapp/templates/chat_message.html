@@ -1,4 +1,6 @@
-  {% if message.author == user %}
+<!-- chat_message.html -->
+
+{% if message.author == user %}
     <li class="flex justify-end mb-4">
         <div class="bg-green-200 rounded-l-lg rounded-tr-lg p-4 max-w-[75%]">
             <span>{{ message.body }}</span>
@@ -9,7 +11,7 @@
             </svg>
         </div>
     </li>
-        {% else %}
+{% else %}
     <li>
         <div class="flex justify-start">
             <div class="flex items-end mr-2" >
@@ -27,7 +29,7 @@
             </div>
         </div>
         <div class="text-sm font-light py-1 ml-10">
-            <span class="text-white"> {{ message.author.profile.name }} </span>
+            <span class="text-white font-bold text-xl">{{ message.author.profile.name }}</span>
             <span class="text-gray-400">@{{ message.author.username }}</span>
         </div>
     </li>
